@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <title> Giaoduc_10posts </title>
+</head>
+<body>
+    {% for content in content_list %}
+        <p> {{ content["likes"] }} likes </p>
+        <p> {{ content["comments"] }} comments </p>
+        <p> {{ content["shares"] }} shares  </p>
+        <p> {{ content["message"] }}</p>
+    {% endfor %}
+</body>
+</html>
