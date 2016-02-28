@@ -154,7 +154,8 @@ client = MongoClient ("localhost", 27017)
 db = client ["GD"]
 post_collection = db ["posts"]
 
-for post in post_list:
+##for post in post_list:
+for post in sorted_post_list[:10]:
     p_list = post.convert_to_dict(post.__dict__)
     post_collection.insert_one(post.__dict__)
     
